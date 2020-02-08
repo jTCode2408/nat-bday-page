@@ -28,9 +28,14 @@ useEffect(()=>{
 
 
 return(
-    <div>
+    <div className = "joke-div">
+        <div className = "joke-head">
         <h1>Happy Birthday Bitchass!</h1>
-        
+        </div>
+
+        <div className = "joke-cont">
+<p>{joke}</p>
+</div>
 
     </div>
 )
