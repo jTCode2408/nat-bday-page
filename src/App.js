@@ -3,18 +3,14 @@ import './App.css';
 import {Route, Link, Switch} from 'react-router-dom';
 import Bday from './components/Bday';
 import Main from './components/Main';
-
+import Router from './Router';
 function App() {
   return (
-    <Route>
-
-    <div className="App">
-      <header className="App-header">
-     <Main/>
-      </header>
-      <Bday/>
-    </div>
+    <Router>
+    <Route path = '/bday' component = {Bday}>
     </Route>
+    <Main/>
+    </Router>
   );
 }
 

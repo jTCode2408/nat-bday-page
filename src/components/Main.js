@@ -1,6 +1,6 @@
 //main page with button routing to bday message page
 import React from 'react';
-import {Link, Switch} from 'react-router-dom';
+import {Route, Link, Switch} from 'react-router-dom';
 import Bday from './Bday';
 import styled from 'styled-components';
 
@@ -13,9 +13,16 @@ const Main =()=>{
 <h1>Natalie's super secret bday page</h1>
 </div>
 
-<Link>
+<Link to = '/bday'>
 <button>Enter</button>
 </Link>
+<Switch>
+<Route exact path = '/bday'>
+<Bday/>
+</Route>
+</Switch>
+
+
         </div>
     )
 }

@@ -11,20 +11,26 @@ import styled from 'styled-components';
 
 const Bday = ()=>{
 
-const [joke, setJoke] = useState()
+const [joke, setJoke] = useState() //use ste fx to set response to joke
+
+//set variable for onclick to fire axios call
+const getJoke = (
 useEffect(()=>{
     axios
     .get('https://icanhazdadjoke.com/', {headers:{
-        'Accept': 'application/json'}}
+        'Accept': 'application/json'}} //format response to json
     )
     .then (res=>{
         console.log(res.data)
         setJoke(res.data.joke)
+        
     
     })
     .catch(error=>console.error(error))
 
-}, [])
+}, []) //end of useFX. dependency array empty to only run once
+
+)
 
 
 return(
@@ -34,7 +40,8 @@ return(
         </div>
 
         <div className = "joke-cont">
-<p>{joke}</p>
+            <h3>Here's a joke for ya</h3>
+            <h4>  {joke}</h4>
 </div>
 
     </div>
