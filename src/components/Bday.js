@@ -14,7 +14,6 @@ const Bday = ()=>{
 const [joke, setJoke] = useState() //use ste fx to set response to joke
 
 //set variable for onclick to fire axios call
-const getJoke = (
 useEffect(()=>{
     axios
     .get('https://icanhazdadjoke.com/', {headers:{
@@ -30,7 +29,6 @@ useEffect(()=>{
 
 }, []) //end of useFX. dependency array empty to only run once
 
-)
 
 
 return(
@@ -40,7 +38,7 @@ return(
         </div>
 
         <div className = "joke-cont">
-            <h3>Here's a joke for ya</h3>
+            <h2>Here's a joke for ya</h2>
             <h4>  {joke}</h4>
 </div>
 
