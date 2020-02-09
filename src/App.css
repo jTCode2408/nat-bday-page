@@ -11,5 +11,18 @@ h1{
   font-family: fantasy;
 }
 h2{
+  color:rgb(83, 2, 2);
+}
+h3{
+  color: rgba(247, 251, 13, 1);
+  border: 2px dotted rgb(78, 18, 76)
+
+}
+
+h4{
   color:purple;
+}
+
+h5{
+color:purple
 }
