@@ -8,6 +8,9 @@ import axios from 'axios';
 import styled from 'styled-components';
 import droBall from '../images/droBall.JPG';
 import droCup from '../images/droCup.PNG'
+import droGis from '../images/droGis.jpg';
+import dogMeme from '../images/dogMeme.JPG';
+
 
 const StyledJokeDiv = styled.div`
 border:2px solid black;
@@ -18,7 +21,10 @@ text-align: center;
 background-color:gold;
 height:33vh;
 `
-
+const StyledDogsDiv = styled.div`
+border:2px solid red;
+display:flex
+`
 
 const Bday = ()=>{
 
@@ -28,7 +34,8 @@ const [joke, setJoke] = useState() //use ste fx to set response to joke
 useEffect(()=>{
     axios
     .get('https://icanhazdadjoke.com/', {headers:{
-        'Accept': 'application/json'}} //format response to json
+        'Accept': 'application/json'}}
+         //format response to json
     )
     .then (res=>{
         console.log(res.data)
@@ -54,8 +61,9 @@ return(
             <h4>  {joke}</h4>
             </div>
 
-
+<StyledDogsDiv>
             <img src = {droCup} alt = "picture of drogo drinking from martini cup"/>
+            </StyledDogsDiv>
 </div>
 
     </StyledJokeDiv>
