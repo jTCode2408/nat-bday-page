@@ -6,9 +6,17 @@ import React, {useEffect, useState} from 'react';
 import {Route, Link, Switch} from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
+import droBall from '../images/droBall.JPG';
+import droCup from '../images/droCup.PNG'
 
 const StyledJokeDiv = styled.div`
 border:2px solid black;
+// display: grid;
+// grid-teplate-columns:repeat(auto-fit,minimax(300px,1fr))
+// place-items: center;
+text-align: center;
+background-color:gold;
+height:33vh;
 `
 
 
@@ -35,17 +43,22 @@ useEffect(()=>{
 
 
 return(
-    <div className = "joke-div">
+    <StyledJokeDiv>
         <div className = "joke-head">
-        <h1>Happy Birthday Bitchass!</h1>
+        <h1>Happy Birthday kid!</h1>
         </div>
 
         <div className = "joke-cont">
+            <div className = "joke-text">
             <h2>Here's a joke for ya</h2>
             <h4>  {joke}</h4>
+            </div>
+
+
+            <img src = {droCup} alt = "picture of drogo drinking from martini cup"/>
 </div>
 
-    </div>
+    </StyledJokeDiv>
 )
 
 }
