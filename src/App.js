@@ -37,7 +37,7 @@ box-shadow:
 
 &:hover {
     background: 
-        rgba(239, 1, 159, 1) 0%
+        rgba(247, 251, 13, 1) 0%
 }
 
 `
