@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  color: rgb(83, 2, 2);
+  text-shadow: maroon;
+  font-size: 3rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  font-family: fantasy;
+}
+h2{
+  color:rgb(83, 2, 2);
+}
+h3{
+  color: rgba(247, 251, 13, 1);
+  border: 2px dotted rgb(78, 18, 76)
+
+}
+
+h4{
+  color:purple;
+}
+
+h5{
+color:purple
+}
