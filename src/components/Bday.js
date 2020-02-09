@@ -31,6 +31,7 @@ background-color: rgb(83, 2, 2);
 const StyledJokeCont = styled.div`
 background-color:rgb(83, 2, 2)
 border-radius:5px;
+margin-top:5px;
 `
 const Bday = ()=>{
 
