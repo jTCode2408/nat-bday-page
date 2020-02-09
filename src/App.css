@@ -5,23 +5,22 @@
 h1{
   color: rgb(83, 2, 2);
   text-shadow: maroon;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   font-variant: small-caps;
   font-family: fantasy;
 }
 h2{
   color:rgb(83, 2, 2);
+  font-size: 3rem;
 }
 h3{
   color: rgba(247, 251, 13, 1);
-  border: 2px dotted rgb(78, 18, 76)
+  border: 2px dotted rgb(78, 18, 76);
+  font-size:2.5rem
 
 }
 
-h4{
-  color:purple;
-}
 
 h5{
 color:purple
