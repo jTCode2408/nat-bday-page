@@ -7,6 +7,9 @@ import {Route, Link, Switch} from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 
+const StyledJokeDiv = styled.div`
+border:2px solid black;
+`
 
 
 const Bday = ()=>{
